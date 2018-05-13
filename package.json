@@ -1,0 +1,38 @@
+{
+  "name": "react-front-maqueta",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.3",
+    "react-router-dom": "^4.1.1",    
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^3.0.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.0.0",
+    "@storybook/addon-knobs": "^3.0.0",
+    "@storybook/addon-links": "^3.0.0",
+    "@storybook/addons": "^3.0.0",
+    "@storybook/react": "^3.0.0",    
+    "node-sass-chokidar": "0.0.2",
+    "npm-run-all": "4.0.2",
+    "react-scripts": "1.0.7",
+    "storybook-addon-smart-knobs": "^3.0.1"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "maqueta": "npm-run-all -p watch-css storybook",
+    "test": "react-scripts test --env=jsdom",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "build-storybook": "build-storybook -c .storybook -o ./storybook",
+    "eject": "react-scripts eject"
+  }
+}
