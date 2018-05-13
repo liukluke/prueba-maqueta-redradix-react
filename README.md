@@ -24,4 +24,8 @@
 
 Importante: los archivos .css dentro de `/styles` están ignorados por git. Si hace falta un CSS estático, meterlo en `public`.
 
-## Instrucciones de la prueba
+## Notas
+
+Puedes empezar a construir tus componentes en el directorio `src/ui`, o donde tú consideres más adecuado.
+
+En el directorio `src/styles` puedes incluir tus archivos de Sass e importarlos desde `src/styles/styles.scss`. La app recargará automáticamente los cambios que realices en los archivos de Sass.
