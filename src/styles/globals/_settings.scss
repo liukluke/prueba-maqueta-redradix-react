@@ -4,11 +4,27 @@
 $colors: (
   main: #737E87,
   card: #D6DCDF,
+  mobile-menu: #eceded,
   text: #ffffff
 );
 
 @function color($color-name) {
   @return map-get($colors, $color-name);
+}
+
+$desktop: 992px;
+$tablet: 768px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
 }
 
 $padding-page: 0 5vw;
