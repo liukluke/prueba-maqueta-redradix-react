@@ -2,7 +2,7 @@
   background-color: color(main);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: $padding-page;
+  padding: 0 $padding-page;
   align-items: center;
 
   button {
@@ -24,6 +24,27 @@
 
     button {
       font-size: 3rem;
+    }
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+
+    .navbar-hamburger {
+      display: none;
+    }
+
+    h3 {
+      justify-content: start;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      justify-content: space-between;
+      justify-items: end;
+      grid-gap: auto;
     }
   }
 }
