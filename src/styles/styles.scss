@@ -1,22 +1,48 @@
 // GLOBALS
 
-@import 'globals/settings';
-@import 'globals/font-size';
+@import "globals/settings";
+@import "globals/font-size";
 
 // BASE
 
 // ATOMS
 
-@import 'atoms/icons';
-@import 'atoms/buttons';
+@import "atoms/icons";
+@import "atoms/buttons";
 
 // MOLECULES
 
+
+//PAGES
+@import "pages/app";
+
 //LAYOUT
-@import 'layout/home';
-@import 'layout/navbar';
-@import 'layout/section';
-@import 'layout/footer';
+@import "layout/home";
+@import "layout/navbar";
+@import "layout/section";
+@import "layout/footer";
 
 //FONTS
-@import 'fonts/Roboto-Regular.ttf';
+@font-face {
+  font-family: RobotoBold;
+  src: local("Roboto Bold"), local("Robot-Bold"),
+    url(fonts/Roboto-Bold.woff) format("woff"),
+    url(fonts/Roboto-Bold.woff2) format("woff2"),
+    url(fonts/Roboto-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: RobotoRegular;
+  src: local("Roboto Regular"), local("Robot-Regular"),
+    url(fonts/Roboto-Regular.woff) format("woff"),
+    url(fonts/Roboto-Regular.woff2) format("woff2"),
+    url(fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: RobotoLight;
+  src: local("Roboto Light"), local("Robot-Light"),
+    url(fonts/Roboto-Light.woff) format("woff"),
+    url(fonts/Roboto-Light.woff2) format("woff2"),
+    url(fonts/Roboto-Light.ttf) format("truetype");
+}

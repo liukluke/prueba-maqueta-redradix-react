@@ -4,7 +4,11 @@ export default class Navbar extends Component {
     render() {
         return (
             <div className="navbar">
-                <i className="fas fa-bars"></i>
+                <div className="navbar-hamburger">
+                    <button type="button" onClick={() => this.props.mobileMenu()}>
+                        <i className={`fas ${(this.props.active? 'fa-times' : 'fa-bars')}`} >
+                        </i></button>
+                </div>
                 <h3 className="navbar-title">LOGO</h3>
                 <ul className="navbar-list">
                     <li>About</li>
@@ -15,4 +19,5 @@ export default class Navbar extends Component {
             </div>
         )
     }
+
 }

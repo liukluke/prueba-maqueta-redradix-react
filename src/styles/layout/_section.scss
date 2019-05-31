@@ -1,18 +1,27 @@
 .section {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: $padding-page;
+  overflow-y: scroll;
+  grid-gap: 10px;
+
+  .section-card {
+    height: 14vh;
+    background-color: color(card);
+    border-radius: $border-radius;
+    font-family: $family-regular;
     display: grid;
-    grid-template-columns:  1fr;
-    margin-top: 3vh;
-    padding: $padding-page;
-    overflow-y: scroll;
-    
-    .section-card {
-        height: 14vh;
-        background-color: color(main-light);
-        border-radius: $border-radius;
-        display: grid;
-        align-items: end;
-        margin-bottom: 10px; 
-        padding: $padding-card;
-        box-sizing: border-box;
+    align-items: end;
+    padding: $padding-card;
+    box-sizing: border-box;
+
+    &:first-child {
+      margin-top: 20px;
     }
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+
 }

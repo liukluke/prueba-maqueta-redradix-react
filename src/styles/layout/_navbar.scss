@@ -1,12 +1,16 @@
 .navbar {
     background-color: color(main);
     display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
     font-size: 2.5rem;
     padding: $padding-page;
+    align-items: center;
 
-    
+    button {
+        font-size: 2.5rem;
+        color: color(text);
+    }
+
     h3 {
         display: grid;
         justify-content: center;
