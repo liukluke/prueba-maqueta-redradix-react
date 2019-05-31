@@ -27,9 +27,11 @@ $tablet: 768px;
   }
 }
 
-$padding-page: 0 5vw;
-$padding-card: 15px 15px;
+$padding-page: 0 1rem;
+$padding-page-tablet: 2rem;
+$padding-card: 1.5rem;
+$padding-card-tablet: 2.5rem;
 $family-regular: RobotoRegular;
 $family-bold: RobotBold;
 $family-light: RobotoLight;
-$border-radius: 5px;
+$border-radius: 0.5rem;

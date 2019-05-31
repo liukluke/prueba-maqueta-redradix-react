@@ -40,5 +40,9 @@
     padding: 0 3rem;
     transition: padding 0.3s, opacity 0.4s;
     transition-delay: 0.2s;
+
+    @include tablet {
+      padding: 0 5rem;
+    }
   }
 }

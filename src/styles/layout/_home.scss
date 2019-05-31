@@ -7,6 +7,10 @@
     font-family: $family-light;
     color: color(text);
     transition: margin 0.5s;
+
+    @include tablet {
+        grid-template-rows: 6.8rem 1fr 14rem; 
+    }
 }
 
 .home-trans {

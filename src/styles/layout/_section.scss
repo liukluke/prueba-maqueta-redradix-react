@@ -3,7 +3,7 @@
   grid-template-columns: 1fr;
   padding: $padding-page;
   overflow-y: scroll;
-  grid-gap: 10px;
+  grid-gap: 0.8rem;
 
   .section-card {
     height: 12rem;
@@ -16,12 +16,31 @@
     box-sizing: border-box;
 
     &:first-child {
-      margin-top: 20px;
+      margin-top: 1.6rem;
     }
 
     &:last-child {
-      margin-bottom: 20px;
+      margin-bottom: 1.6rem;
     }
   }
 
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 21rem);
+    grid-gap: 1.5rem;
+    padding: $padding-page-tablet;
+
+    .section-card {
+      height: auto;
+      padding: $padding-card-tablet;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
