@@ -1,0 +1,19 @@
+.navbar {
+    background-color: color(main);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    font-size: 2.5rem;
+    padding: $padding-page;
+
+    
+    h3 {
+        display: grid;
+        justify-content: center;
+    }
+
+    ul {
+       display: none; 
+    }
+
+}

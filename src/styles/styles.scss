@@ -1,6 +1,7 @@
 // GLOBALS
 
 @import 'globals/settings';
+@import 'globals/font-size';
 
 // BASE
 
@@ -10,3 +11,12 @@
 @import 'atoms/buttons';
 
 // MOLECULES
+
+//LAYOUT
+@import 'layout/home';
+@import 'layout/navbar';
+@import 'layout/section';
+@import 'layout/footer';
+
+//FONTS
+@import 'fonts/Roboto-Regular.ttf';

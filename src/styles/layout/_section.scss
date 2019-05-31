@@ -1,0 +1,18 @@
+.section {
+    display: grid;
+    grid-template-columns:  1fr;
+    margin-top: 3vh;
+    padding: $padding-page;
+    overflow-y: scroll;
+    
+    .section-card {
+        height: 14vh;
+        background-color: color(main-light);
+        border-radius: $border-radius;
+        display: grid;
+        align-items: end;
+        margin-bottom: 10px; 
+        padding: $padding-card;
+        box-sizing: border-box;
+    }
+}

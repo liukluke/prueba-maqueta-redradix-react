@@ -1,3 +1,17 @@
 /*------------------------------------*\
     $VARIABLES
 \*------------------------------------*/
+$colors: (
+  main: #737e87,
+  main-light: lighten(#808080, 20%),
+  text: #ffffff
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+$padding-page: 0 5vw;
+$padding-card: 15px 15px;
+$font-family: 'Roboto';
+$border-radius: 5px;
